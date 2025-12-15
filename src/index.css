@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+
+/* src/index.css (or your main stylesheet) */
+
+/* ... (Existing @tailwind directives) ... */
+
+/* --- Global Smooth Scrolling Implementation --- */
+html {
+  scroll-behavior: smooth;
+}
