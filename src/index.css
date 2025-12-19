@@ -1,12 +1,30 @@
 @import "tailwindcss";
 
 
-
-/* src/index.css (or your main stylesheet) */
-
-/* ... (Existing @tailwind directives) ... */
-
-/* --- Global Smooth Scrolling Implementation --- */
 html {
+  /* Mandatory vertical snapping */
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  background-color: #111827; /* Your gray-900 theme */
+}
+
+/* This class goes on the outer <section> of EVERY page */
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100dvh; /* Perfect height for both Mobile and Desktop */
+  width: 100%;
+  overflow-y: auto; /* Allows scrolling inside a page if text is long */
+  position: relative;
+  scrollbar-width: none; /* Hides scrollbar for that presentation look */
+}
+
+.snap-section::-webkit-scrollbar {
+  display: none;
 }
