@@ -45,7 +45,7 @@ const Courses = () => {
             whileInView={{ opacity: 1, y: 0 }} // Changed to whileInView for scroll effect
             className="text-4xl md:text-6xl font-extrabold mb-4"
           >
-            Explore Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Expertise</span>
+            Explore Our <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-purple-500 to-pink-500">Expertise</span>
           </motion.h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Whether you're hitting the road, upgrading your digital skills, or securing your future, Wheelcom is your trusted partner.
